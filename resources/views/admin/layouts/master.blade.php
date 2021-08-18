@@ -47,9 +47,34 @@
 
     @include('admin.layouts.main-header')
     @include('admin.layouts.main-sidebar')
-
-    @yield('content')
-
+    <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+                <div class="d-flex align-items-center">
+                    <div class="mr-auto">
+                        <h3 class="page-title">@yield('title')</h3>
+                    </div>
+                    <div class="right-title w-170">
+                    <span class="subheader_daterange font-weight-600" id="dashboard_daterangepicker">
+                        <span class="subheader_daterange-label">
+                            <span class="subheader_daterange-title"></span>
+                            <span class="subheader_daterange-date text-primary"></span>
+                        </span>
+                        <a href="#" class="btn btn-sm btn-primary">
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                    </span>
+                    </div>
+                </div>
+            </div>
+            <!-- Main content -->
+            <section class="content">
+                @yield('content')
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
     @include('admin.layouts.main-footer')
     @include('admin.layouts.control-sidebar')
 </div>

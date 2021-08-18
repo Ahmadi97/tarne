@@ -24,7 +24,9 @@
 <body>
 <div class="wrapper-wide">
     @include('client.layouts.header')
-    @yield('content')
+    <div class="container">
+        @yield('content')
+    </div>
     @include('client.layouts.footer')
 {{--    @include('client.layouts.side-blocks')--}}
 </div>

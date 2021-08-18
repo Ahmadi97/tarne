@@ -31,7 +31,6 @@
         </div>
     </div>
     <!-- Feature Box End-->
-    <div class="container">
         <div class="row">
             <!-- Left Part Start-->
             <aside id="column-left" class="col-sm-3 hidden-xs">
@@ -1181,5 +1180,4 @@
             <!--Middle Part End-->
         </div>
     </div>
-</div>
 @endsection
