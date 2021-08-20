@@ -61,6 +61,19 @@
             </li>
             <li class="treeview">
                 <a href="#">
+                    <i class="mdi mdi-content-copy"></i>
+                    <span>برند</span>
+                    <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="{{route('brands.index')}}"><i class="mdi mdi-toggle-switch-off"></i>لیست برند ها</a></li>
+                    <li><a href="{{route('brands.create')}}"><i class="mdi mdi-toggle-switch-off"></i>ایجاد برند جدید</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
                     <i class="mdi mdi-tune-vertical"></i>
                     <span>Page Layouts </span>
                     <span class="pull-right-container">

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\admin\BrandController;
 use App\Http\Controllers\admin\CategoryController;
 use App\Http\Controllers\client\HomeController;
 use Illuminate\Support\Facades\Route;
@@ -31,3 +32,10 @@ Route::prefix('/adminpanel/categories')->name('categories.')->group(function (){
     Route::patch('/{category}', [CategoryController::class, 'update'])->name('update');
     Route::delete('/{category}', [CategoryController::class, 'destroy'])->name('destroy');
 });
+
+Route::get('/adminpanel/brands', [BrandController::class, 'index'])->name('brands.index');
+Route::get('/adminpanel/brands/create', [BrandController::class, 'create'])->name('brands.create');
+Route::post('/adminpanel/brands', [BrandController::class, 'store'])->name('brands.store');
+Route::get('/adminpanel/brands/{brand}/edit', [BrandController::class, 'edit'])->name('brands.edit');
+Route::patch('/adminpanel/brands/{brand}', [BrandController::class, 'update'])->name('brands.update');
+Route::delete('/adminpanel/brands/{brand}', [BrandController::class, 'destroy'])->name('brands.destroy');
